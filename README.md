@@ -1,0 +1,1 @@
+Weight Bot uses your starting weigh in and regular weigh ins to track long term and short weight changes.

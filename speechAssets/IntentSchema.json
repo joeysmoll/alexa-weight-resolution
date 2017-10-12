@@ -1,0 +1,43 @@
+{
+    "intents": [{
+            "intent": "RecordStartingWeight",
+            "slots": [{
+                    "name": "StartWeight",
+                    "type": "AMAZON.NUMBER"
+                },
+                {
+                    "name": "StartDate",
+                    "type": "AMAZON.DATE"
+                },
+                {
+                    "name": "StartWeightDecimal",
+                    "type": "AMAZON.NUMBER"
+                }
+            ]
+        },
+        {
+            "intent": "RecordWeight",
+            "slots": [{
+                    "name": "Weight",
+                    "type": "AMAZON.NUMBER"
+                },
+                {
+                    "name": "Date",
+                    "type": "AMAZON.DATE"
+                }
+            ]
+        },
+        {
+            "intent": "ResetWeightBot",
+            "slots": [{
+                    "name": "ResetWeight",
+                    "type": "AMAZON.NUMBER"
+                },
+                {
+                    "name": "ResetDate",
+                    "type": "AMAZON.DATE"
+                }
+            ]
+        }
+    ]
+}
