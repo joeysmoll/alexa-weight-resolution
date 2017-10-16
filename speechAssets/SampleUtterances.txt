@@ -4,6 +4,12 @@ RecordStartingWeight {StartWeight} pounds
 RecordStartingWeight {StartWeight} point {StartWeightDecimal}
 RecordStartingWeight {StartWeight} point {StartWeightDecimal} pounds
 
+RecordWeight {Weight}
+RecordWeight {Weight} pounds
+
+RecordWeight {Weight} point {WeightDecimal}
+RecordWeight {Weight} point {WeightDecimal} pounds
+
 RecordWeight my weight is {Weight}
 RecordWeight my weight is {Weight} today
 RecordWeight my weight on {Date} is {Weight}
@@ -24,6 +30,25 @@ RecordWeight I weigh {Weight} pounds
 RecordWeight weight {Weight} pounds
 RecordWeight I weighed {Weight} pounds on {Date}
 
+RecordWeight my weight is {Weight} point {WeightDecimal}
+RecordWeight my weight is {Weight} point {WeightDecimal} today
+RecordWeight my weight on {Date} is {Weight} point {WeightDecimal}
+RecordWeight my weight on {Date} was {Weight} point {WeightDecimal}
+RecordWeight record weight {Weight} point {WeightDecimal}
+RecordWeight today I weigh {Weight} point {WeightDecimal}
+RecordWeight I weigh {Weight} point {WeightDecimal}
+RecordWeight weight {Weight} point {WeightDecimal}
+RecordWeight I weighed {Weight} point {WeightDecimal} on {Date}
+
+RecordWeight my weight is {Weight} point {WeightDecimal} pounds
+RecordWeight my weight is {Weight} point {WeightDecimal} pounds today
+RecordWeight my weight on {Date} is {Weight} point {WeightDecimal} pounds
+RecordWeight my weight on {Date} was {Weight} point {WeightDecimal} pounds
+RecordWeight record weight {Weight} point {WeightDecimal} pounds
+RecordWeight today I weigh {Weight} point {WeightDecimal} pounds
+RecordWeight I weigh {Weight} point {WeightDecimal} pounds
+RecordWeight weight {Weight} point {WeightDecimal} pounds
+RecordWeight I weighed {Weight} point {WeightDecimal} pounds on {Date}
 
 ResetWeightBot reset weight bot
 ResetWeightBot reset weight
