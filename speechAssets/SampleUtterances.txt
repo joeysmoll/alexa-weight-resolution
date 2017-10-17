@@ -11,6 +11,8 @@ RecordWeight {Weight} point {WeightDecimal}
 RecordWeight {Weight} point {WeightDecimal} pounds
 
 RecordWeight my weight is {Weight}
+RecordWeight my weight is {Weight} point {WeightDecimal}
+
 RecordWeight my weight is {Weight} today
 RecordWeight my weight on {Date} is {Weight}
 RecordWeight my weight on {Date} was {Weight}
