@@ -21,9 +21,6 @@ var STATES = {
 var today = new Date();
 var dd = today.getDate();
 var mm = today.getMonth() + 1; //January is 0!
-var monthNames = ["January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-];
 var yyyy = today.getFullYear();
 if (dd < 10) {
     dd = '0' + dd
@@ -52,7 +49,6 @@ var handlers = {
         } else {
             this.handler.state = STATES.RECORDWEIGHT;
             this.emitWithState('LaunchWeight');
-            //this.emit(':ask', 'How much do you weight today?');
         }
     },
 
@@ -110,7 +106,7 @@ var recordWeightHandlers = Alexa.CreateStateHandler(STATES.RECORDWEIGHT, {
                         this.attributes['weightChange'] = Math.round((this.attributes['Weight'] - this.attributes['startingWeight']) * 10) / 10;
                         this.emit(':tell', 'You have gained ' + this.attributes['weightChange'] + ' pounds since ' + this.attributes['startWeightDate']);
                     }
-                    this.handler.state = null;
+                    //this.handler.state = null;
                 },
 
                 'AMAZON.NoIntent': function() {
