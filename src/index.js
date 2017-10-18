@@ -1,5 +1,7 @@
 'use strict';
 var Alexa = require('alexa-sdk');
+var AWS = require('aws-sdk');
+AWS.config.region = 'us-east-1';
 
 //enter app_id
 const APP_ID = 'amzn1.ask.skill.9f38e666-f9d0-4970-892d-5b2793cef971';
@@ -9,7 +11,7 @@ exports.handler = function(event, context, callback) {
 
     alexa.dynamoDBTableName = 'weightTable';
 
-    alexa.APP_ID = APP_ID;
+    alexa.appId = APP_ID;
     alexa.registerHandlers(handlers, recordWeightHandlers);
     alexa.execute();
 };
