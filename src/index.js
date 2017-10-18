@@ -101,12 +101,12 @@ var recordWeightHandlers = Alexa.CreateStateHandler(STATES.RECORDWEIGHT, {
             'AMAZON.YesIntent': function() {
                 if (this.attributes['startingWeight'] >= this.attributes['Weight']) {
                     this.attributes['weightChange'] = Math.round((this.attributes['startingWeight'] - this.attributes['Weight']) * 10) / 10;
-                    this.emit(':tell', 'You have lost ' + this.attributes['weightChange'] + ' pounds since ' + this.attributes['startWeightDate']);
+                    this.emit(':tell', 'Great, You have lost ' + this.attributes['weightChange'] + ' pounds since ' + this.attributes['startWeightDate']);
                     //this.emit(':tell', 'You have lost ' + this.attributes['weightChange'] + 'pounds since ' + <say-as interpret-as = "date"> this.attributes['startWeightDate'] </say-as>);
                     }
                     else {
                         this.attributes['weightChange'] = Math.round((this.attributes['Weight'] - this.attributes['startingWeight']) * 10) / 10;
-                        this.emit(':tell', 'You have gained ' + this.attributes['weightChange'] + ' pounds since ' + this.attributes['startWeightDate']);
+                        this.emit(':tell', 'Uh oh, You have gained ' + this.attributes['weightChange'] + ' pounds since ' + this.attributes['startWeightDate']);
                     }
                     //this.handler.state = null;
                 },
