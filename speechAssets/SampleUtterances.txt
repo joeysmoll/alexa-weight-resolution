@@ -8,102 +8,53 @@ RecordWeight my weight is {Weight}
 RecordWeight my weight is {Weight} point {WeightDecimal}
 
 RecordWeight my weight is {Weight} today
-RecordWeight my weight on {Date} is {Weight}
-RecordWeight my weight on {Date} was {Weight}
-RecordWeight record weight {Weight}
+RecordWeight record {Weight}
 RecordWeight today I weigh {Weight}
 RecordWeight I weigh {Weight}
 RecordWeight weight {Weight}
-RecordWeight I weighed {Weight} on {Date}
 
 RecordWeight my weight is {Weight} pounds
 RecordWeight my weight is {Weight} pounds today
-RecordWeight my weight on {Date} is {Weight} pounds
-RecordWeight my weight on {Date} was {Weight} pounds
-RecordWeight record weight {Weight} pounds
+RecordWeight record {Weight} pounds
 RecordWeight today I weigh {Weight} pounds
 RecordWeight I weigh {Weight} pounds
 RecordWeight weight {Weight} pounds
-RecordWeight I weighed {Weight} pounds on {Date}
 
 RecordWeight my weight is {Weight} point {WeightDecimal}
 RecordWeight my weight is {Weight} point {WeightDecimal} today
-RecordWeight my weight on {Date} is {Weight} point {WeightDecimal}
-RecordWeight my weight on {Date} was {Weight} point {WeightDecimal}
-RecordWeight record weight {Weight} point {WeightDecimal}
+RecordWeight record {Weight} point {WeightDecimal}
 RecordWeight today I weigh {Weight} point {WeightDecimal}
 RecordWeight I weigh {Weight} point {WeightDecimal}
 RecordWeight weight {Weight} point {WeightDecimal}
-RecordWeight I weighed {Weight} point {WeightDecimal} on {Date}
 
 RecordWeight my weight is {Weight} point {WeightDecimal} pounds
 RecordWeight my weight is {Weight} point {WeightDecimal} pounds today
-RecordWeight my weight on {Date} is {Weight} point {WeightDecimal} pounds
-RecordWeight my weight on {Date} was {Weight} point {WeightDecimal} pounds
-RecordWeight record weight {Weight} point {WeightDecimal} pounds
+RecordWeight record {Weight} point {WeightDecimal} pounds
 RecordWeight today I weigh {Weight} point {WeightDecimal} pounds
 RecordWeight I weigh {Weight} point {WeightDecimal} pounds
 RecordWeight weight {Weight} point {WeightDecimal} pounds
-RecordWeight I weighed {Weight} point {WeightDecimal} pounds on {Date}
 
 ResetWeightBot reset weight bot
 ResetWeightBot reset weight
 ResetWeightBot reset my weight
 ResetWeightBot reset starting weight
 ResetWeightBot reset my starting weight
-ResetWeightBot reset weight to {ResetWeight}
-ResetWeightBot reset my weight to {ResetWeight}
-ResetWeightBot change starting weight to {ResetWeight}
-ResetWeightBot change my starting weight to {ResetWeight}
-ResetWeightBot make starting weight {ResetWeight}
-ResetWeightBot make my starting weight {ResetWeight}
-ResetWeightBot reset weight to {ResetWeight} pounds
-ResetWeightBot change starting weight to {ResetWeight} pounds
-ResetWeightBot make starting weight {ResetWeight} pounds
-ResetWeightBot reset my weight to {ResetWeight} pounds
-
-ResetWeightBot reset weight to {ResetWeight} point {ResetDecimal}
-ResetWeightBot reset my weight to {ResetWeight} point {ResetDecimal}
-ResetWeightBot change starting weight to {ResetWeight} point {ResetDecimal}
-ResetWeightBot change my starting weight to {ResetWeight} point {ResetDecimal}
-ResetWeightBot make starting weight {ResetWeight} point {ResetDecimal}
-ResetWeightBot make my starting weight {ResetWeight} point {ResetDecimal}
-ResetWeightBot reset weight to {ResetWeight} point {ResetDecimal} pounds
-ResetWeightBot change starting weight to {ResetWeight} point {ResetDecimal} pounds
-ResetWeightBot make starting weight {ResetWeight} point {ResetDecimal} pounds
-ResetWeightBot reset my weight to {ResetWeight} point {ResetDecimal} pounds
 
 ResetWeightBot to reset weight bot
 ResetWeightBot to reset weight
 ResetWeightBot to reset my weight
 ResetWeightBot to reset starting weight
 ResetWeightBot to reset my starting weight
-ResetWeightBot to reset weight to {ResetWeight}
-ResetWeightBot to reset my weight to {ResetWeight}
-ResetWeightBot to change starting weight to {ResetWeight}
-ResetWeightBot to change my starting weight to {ResetWeight}
-ResetWeightBot to make starting weight {ResetWeight}
-ResetWeightBot to make my starting weight {ResetWeight}
-ResetWeightBot to reset weight to {ResetWeight} pounds
-ResetWeightBot to change starting weight to {ResetWeight} pounds
-ResetWeightBot to make starting weight {ResetWeight} pounds
-ResetWeightBot to reset my weight to {ResetWeight} pounds
-
-ResetWeightBot to reset weight to {ResetWeight} point {ResetDecimal}
-ResetWeightBot to reset my weight to {ResetWeight} point {ResetDecimal}
-ResetWeightBot to change starting weight to {ResetWeight} point {ResetDecimal}
-ResetWeightBot to change my starting weight to {ResetWeight} point {ResetDecimal}
-ResetWeightBot to make starting weight {ResetWeight} point {ResetDecimal}
-ResetWeightBot to make my starting weight {ResetWeight} point {ResetDecimal}
-ResetWeightBot to reset weight to {ResetWeight} point {ResetDecimal} pounds
-ResetWeightBot to change starting weight to {ResetWeight} point {ResetDecimal} pounds
-ResetWeightBot to make starting weight {ResetWeight} point {ResetDecimal} pounds
-ResetWeightBot to reset my weight to {ResetWeight} point {ResetDecimal} pounds
 
 RepeatWeight how much do I weigh
 RepeatWeight what is my weight
 RepeatWeight say my weight
 RepeatWeight say weight
 RepeatWeight repeat weight
+RepeatWeight to say my weight
+RepeatWeight to say weight
+RepeatWeight to repeat weight
+RepeatWeight my current weight
+RepeatWeight current weight
 
 ConfirmReset confirm reset
