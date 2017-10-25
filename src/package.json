@@ -1,18 +1,17 @@
 {
-    "name": "weight-bot",
-    "version": "1.0.0",
-    "description": "record weight skill",
-    "main": "index.js",
-    "author": "Joey Smoll",
-    "scripts": {
-        "invoke": "aws lambda invoke --function-name 'weightBotSkill' --payload fileb://../tests/events/alexa-start-session.json ../tests/out.txt && cat ../tests/out.txt",
-        "test": "node ../tests/test.js",
-
-        "upload": "aws lambda update-function-code --function-name 'weightBotSkill' --zip-file fileb://../src/src.zip"
-
-    },
-    "dependencies": {
-        "alexa-sdk": "1.0.14"
-    }
-
+  "name": "weight-bot",
+  "version": "1.0.0",
+  "description": "record weight skill",
+  "main": "index.js",
+  "author": "Joey Smoll",
+  "scripts": {
+    "invoke": "aws lambda invoke --function-name 'weightBotSkill' --payload fileb://../tests/events/alexa-start-session.json ../tests/out.txt && cat ../tests/out.txt",
+    "test": "node ../tests/test.js",
+    "upload": "aws lambda update-function-code --function-name 'weightBotSkill' --zip-file fileb://../src/src.zip"
+  },
+  "dependencies": {
+    "alexa-sdk": "1.0.14",
+    "moment": "^2.19.1",
+    "moment-timezone": "^0.5.13"
+  }
 }
