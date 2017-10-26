@@ -12,6 +12,7 @@
   "dependencies": {
     "alexa-sdk": "1.0.14",
     "moment": "^2.19.1",
-    "moment-timezone": "^0.5.13"
+    "moment-timezone": "^0.5.13",
+    "voicelabs": "^1.0.1"
   }
 }
