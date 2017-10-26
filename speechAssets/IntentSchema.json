@@ -6,6 +6,8 @@
         { "intent": "AMAZON.NoIntent" },
         {"intent": "RepeatWeight"},
         {"intent": "ConfirmReset"},
+        {"intent": "AMAZON.StopIntent"},
+        {"intent": "AMAZON.CancelIntent"},
         {"intent": "AMAZON.HelpIntent"}
     ]
 }

@@ -15,29 +15,6 @@ exports.handler = function(event, context, callback) {
     alexa.execute();
 };
 
-// var today = new Date();
-// var dd = today.getDate();
-// var mm = today.getMonth() + 1; //January is 0!
-// var yyyy = today.getFullYear();
-// if (dd < 10) {
-//     dd = '0' + dd
-// }
-// if (mm < 10) {
-//     mm = '0' + mm
-// }
-// var currentDay = mm + '/' + (dd - 1) + '/' + yyyy;
-
-// function getLastWeek(){
-//     var today = new Date();
-//     var lastWeek = new Date(today.getFullYear(), today.getMonth(), today.getDate() - 7);
-//     return lastWeek ;
-// }
-// var lastWeek = getLastWeek();
-// var lastWeekMonth = lastWeek.getMonth() + 1;
-// var lastWeekDay = lastWeek.getDate();
-// var lastWeekYear = lastWeek.getFullYear();
-// var lastWeekDisplay = lastWeekMonth + "/" + lastWeekDay + "/" + lastWeekYear;
-
 var currentDay = moment().tz("America/Los_angeles").format('L');
 var lastWeekDisplay = moment().subtract(7, 'days').tz("America/Los_Angeles").format('L');
 
@@ -167,6 +144,20 @@ var handlers = {
         var speechText = 'LaunchIntent';
         VoiceLabs.track(this.event.session, 'ConfirmReset', 'Confirm Reset', speechText, (error, response) => {
             this.emit(speechText);
+        }); 
+    },
+
+    'AMAZON.StopIntent': function(){
+        var speechText = 'Goodbye';
+        VoiceLabs.track(this.event.session, 'AMAZON.StopIntent', 'Stop', speechText, (error, response) => {
+            this.emit(':tell', speechText);
+        }); 
+    },
+
+    'AMAZON.CancelIntent': function(){
+        var speechText = 'Goodbye';
+        VoiceLabs.track(this.event.session, 'AMAZON.CancelIntent', 'Cancel', speechText, (error, response) => {
+            this.emit(':tell', speechText);
         }); 
     },
 
