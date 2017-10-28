@@ -161,10 +161,14 @@ var handlers = {
         }); 
     },
 
+    'SessionEndedRequest': function() {
+        console.log(`Session ended: ${this.event.request.reason}`);
+    },
+
     'AMAZON.HelpIntent': function(){
-        var speechText = 'To quickly store your weight, you can say. Alexa, tell weight bot, one hundred and seventy-five pounds, or. Alexa, tell weight bot, my weight today is one hundred and seventy-five point five pounds. To hear your starting weight, and your last recorded weight, you can say. Alexa, ask weight bot, how much do I weigh? To reset your weight information, you can say, reset weight bot.';
+        var speechText = 'Need help? To record your weight, you can say the number of pounds you currently weigh, such as, one hundred and ninety-five point 5 pounds. To find out your starting weight, and your last recorded weight, you can say. What is my weight? To reset your weight data, you can say. Reset weight bot. Please say the phrase associated with the action you would like to take.';
         VoiceLabs.track(this.event.session, 'AMAZON.HelpIntent', 'Help', speechText, (error, response) => {
-            this.emit(':tell', speechText);
+            this.emit(':ask', speechText);
         }); 
     }
 };
