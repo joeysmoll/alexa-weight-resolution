@@ -10,7 +10,7 @@
     "upload": "aws lambda update-function-code --function-name 'weightBotSkill' --zip-file fileb://../src/src.zip"
   },
   "dependencies": {
-    "alexa-sdk": "1.0.14",
+    "alexa-sdk": "^1.0.14",
     "moment": "^2.19.1",
     "moment-timezone": "^0.5.13",
     "voicelabs": "^1.0.1"
