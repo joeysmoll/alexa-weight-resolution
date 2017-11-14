@@ -10,7 +10,7 @@ var event =
         "userId": "amzn1.ask.account.[unique-value-here]"
       },
       "application": {
-        "applicationId": "amzn1.ask.skill.9f38e666-f9d0-4970-892d-5b2793cef971"
+        "applicationId": "amzn1.ask.skill.50d6ce6e-518e-4262-ab46-cf367abd30a0"
       }
     },
     "version": "1.0",
@@ -31,7 +31,7 @@ var event =
           }
         },
         "application": {
-          "applicationId": "amzn1.ask.skill.9f38e666-f9d0-4970-892d-5b2793cef971"
+          "applicationId": "amzn1.ask.skill.50d6ce6e-518e-4262-ab46-cf367abd30a0"
         },
         "user": {
           "userId": "amzn1.ask.account.[unique-value-here]"

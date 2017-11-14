@@ -1,11 +1,12 @@
 {
     "intents": [
         { "intent": "RecordWeight", "slots": [{ "name": "Weight", "type": "AMAZON.NUMBER" }, { "name": "Date", "type": "AMAZON.DATE" }, { "name": "WeightDecimal", "type": "AMAZON.NUMBER" }] },
-        { "intent": "ResetWeightBot", "slots": [{ "name": "ResetWeight", "type": "AMAZON.NUMBER" }, { "name": "ResetDate", "type": "AMAZON.DATE" }, { "name": "ResetDecimal", "type": "AMAZON.NUMBER" }] },
+        { "intent": "ResetWeightResolution", "slots": [{ "name": "ResetWeight", "type": "AMAZON.NUMBER" }, { "name": "ResetDate", "type": "AMAZON.DATE" }, { "name": "ResetDecimal", "type": "AMAZON.NUMBER" }] },
         { "intent": "AMAZON.YesIntent" },
         { "intent": "AMAZON.NoIntent" },
         {"intent": "RepeatWeight"},
         {"intent": "ConfirmReset"},
+        {"intent": "CorrectWeight"},
         {"intent": "AMAZON.StopIntent"},
         {"intent": "AMAZON.CancelIntent"},
         {"intent": "AMAZON.HelpIntent"}

@@ -34,17 +34,17 @@ RecordWeight today I weigh {Weight} point {WeightDecimal} pounds
 RecordWeight I weigh {Weight} point {WeightDecimal} pounds
 RecordWeight weight {Weight} point {WeightDecimal} pounds
 
-ResetWeightBot reset weight bot
-ResetWeightBot reset weight
-ResetWeightBot reset my weight
-ResetWeightBot reset starting weight
-ResetWeightBot reset my starting weight
+ResetWeightResolution reset weight resolution
+ResetWeightResolution reset weight
+ResetWeightResolution reset my weight
+ResetWeightResolution reset starting weight
+ResetWeightResolution reset my starting weight
 
-ResetWeightBot to reset weight bot
-ResetWeightBot to reset weight
-ResetWeightBot to reset my weight
-ResetWeightBot to reset starting weight
-ResetWeightBot to reset my starting weight
+ResetWeightResolution to reset weight resolution
+ResetWeightResolution to reset weight
+ResetWeightResolution to reset my weight
+ResetWeightResolution to reset starting weight
+ResetWeightResolution to reset my starting weight
 
 RepeatWeight how much do I weigh
 RepeatWeight what is my weight
@@ -58,3 +58,7 @@ RepeatWeight my current weight
 RepeatWeight current weight
 
 ConfirmReset confirm reset
+
+CorrectWeight correct weight
+CorrectWeight correct my weight
+CorrectWeight correct todays weight
