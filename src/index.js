@@ -20,34 +20,34 @@ var lastWeekDisplay = moment().subtract(7, 'days').tz("America/Los_Angeles").for
 
 var todayWeight = undefined;
 
-var lossIntro = ['Awesome, ', 'Keep it up, ', 'Oh heck yeah, ', 'Holy moley, ', 'Your killin it, ', 'Look at you, ', 'You make me proud, ', 'Good job, ', 'Fan-freakin-tastic, ', "I bet your feeling good, ", "This brings a smile to speaker, "];
+var lossIntro = ['Awesome, ', 'Keep it up, ', 'Oh heck yeah, ', 'Holy moley, ', 'Your killin it, ', 'Look at you, ', 'You make me proud, ', 'Good job, ', 'Fan-freakin-tastic, ', "I bet your feeling good, ", "This brings a smile to my speaker, "];
 
 var tip = [
     'Learn about carbs with a low gly-seemik index, like beans and rolled oats. These foods have a smaller impact on insulin and blood sugar levels compared to other carbs.',
     "Find a diet that's right for you. The Snake diet is a fasting focused diet that yields the quickest results, but also requires a lot of willpower.",
-    "Find a diet that's right for you. The slow carb diet by Tim Ferris is an effective diet that focuses on eating foods with a low gly-seemik index.",
-    "Find a diet that's right for you. The ketogenic diet is a fat based diet that minimizes carbohydrate intake.",
-    "Find a diet that's right for you. The paleo diet focuses on avoiding grains, dairy, and processed food.",
+    "Find a diet that's right for you. The slow carb diet by Tim Ferris is an effective diet that focuses on eating meat, vegetables and low gly-seemik index carbs.",
+    "Find a diet that's right for you. The ketogenic diet is a fat based diet, that focuses on getting your body into a ketogenic state by minimizing carbohydrate intake.",
+    "Find a diet that's right for you. The paleo diet focuses on avoiding grains, dairy, legumes, and processed foods.",
     "Find a diet that's right for you. A plant based diet includes, fruits, vegetables, whole grains and nuts, and it avoids foods like meat, dairy, eggs and processed foods.",
-    "Find a diet that's right for you. Intermittent fasting emphasizes eating all your daily calories within a 1 to 8 hour window.",
-    "Avoid drinking your calories and resort to water.",
-    "Prioritize diet over exercise, but don't exclude exercise.",
-    "Understand the differences between carbs, fats, and protein, also known as macros. This will assist you with meal planning.",
-    "Although it might be out of the question, try reducing caffeine intake from coffee and tea. Caffeine raises cortisol levels and causes your body to increase insulin production",
-    "Increase your dietary fiber to 25 to 30 grams a day. Fiber is typically found in healthy whole foods like fruits and vegetables and makes your body feel more satiated.",
+    "Find a diet that's right for you. Intermittent fasting emphasizes eating all your daily calories within a 1 to 8 hour window, to increase the amount of time your body is in a fasted state.",
+    "Avoid drinking your calories, and resort to water. Many drinks are high in sugar and fat, and low in nutrition.",
+    "Prioritize diet over exercise, but don't exclude exercise. Diet will be the biggest driver when losing weight.",
+    "Try incorporating compound exercises like squats, dead lifts, and kettle bell swings into your exercise routine. These movements use many muscle groups, and are an efficient way of burning calories and building muscle.",
+    "Understand the differences between carbs, fats, and protein, also known as macros. This will assist you with meal planning, and understanding food composition.",
+    "Although it might be out of the question, try reducing caffeine intake from coffee and tea. Caffeine raises cortisol levels and causes your body to increase insulin production.",
+    "Increase your dietary fiber intake. This will increase your bodies metabolism. Fiber is typically found in healthy whole foods like fruits and vegetables, and will make your body feel more satiated.",
     "Cut back on processed sugars. Try something like date sugar that is still a whole food, and has a lower gly-seemik index.",
-    "Although it requires some will, cold showers and baths have profound fat burning effects.",
+    "Although it requires some willpower, cold showers and baths have profound effects on fat burning, and muscle repair.",
     "Weigh yourself everyday. It will make you more conscious on how diet and exercise is affecting your weight. Don't worry about small day to day weight fluctuations, but how you're trending in the long term.",
     "Do not get demoralized by weight fluctuations or weight loss plateaus. When losing weight there will be times where your body starts retaining more water. Keep up your routine, and the water weight will eventually be shed.",
-    "Measure your waist, biceps, and thighs. On some days, you might not see a difference on the scale, but it will likely show up in your measurements.",
+    "Measure your waist, biceps, and thighs. On some days, you might not see a difference on the scale, but many times progress will show up in your measurements.",
     "Ease in to a new workout routine, and focus on form to prevent injury.",
-    "Calculate your body mass index.",
-    "Calculate your body fat percentage.",
-    "Reduce use of Artificial sweetners. Although they have no calories these sweetners will increase insulin productiion blood sugar levels.",
+    "Calculate your body mass index. Get an accurate idea of where you are at, and where you'd like to be",
+    "Calculate your body fat percentage. Some common tools for measuring body fat, are, skin calipers, bioelectric impedence scales, hydrostatic weighing, and Dexa scans.",
+    "Reduce use of Artificial sweeteners. Although they have no calories, these sweeteners will increase insulin production and blood sugar levels.",
     "Drink ice water. It's considered a negative calorie drink since your body burns calories to heat the water up to body temperature.",
-    "Eat celery. It's a near to zero calorie food, high in fiber which helps boost your metabolism.",
-    "Try to get a good sleep. Poor sleep has a negative affect on your bodies metabolism.",
-    "Eat spicy foods. Capsaicin, which is found in spicy food, has been known to increase the bodies metabolism."
+    "Get a good nights sleep. Poor sleep has a negative affect on your bodies metabolism.",
+    "Eat spicy foods. Capsaicin, which is found in spicy food, is known to increase the bodies metabolism."
 ];
 
 var handlers = {
@@ -110,9 +110,9 @@ var handlers = {
             if(todayWeight <= this.attributes["startWeight"] && todayWeight > this.attributes["goalWeight"]) {
                 weightChange = Math.round((this.attributes['startWeight'] - todayWeight) * 10) / 10;
                 goalDiff =  Math.round((todayWeight - this.attributes["goalWeight"]) * 10) / 10;
-                this.attributes['message'] = todayWeight + " pounds. " + lossIntro[Math.floor(Math.random() * 6)] + "you've lost " + weightChange + " pounds and you're " + goalDiff + " pounds from your goal."
+                this.attributes['message'] = todayWeight + " pounds. " + lossIntro[Math.floor(Math.random() * 11)] + "you've lost " + weightChange + " pounds and you're " + goalDiff + " pounds from your goal."
                 if( (Math.floor(Math.random() * 6) < 2) ){
-                    this.attributes['message'] += " And now for a random tip. " + tip[Math.floor(Math.random() * 24)];
+                    this.attributes['message'] += " And now for a random tip. " + tip[Math.floor(Math.random() * 25)];
                 }   
             } else if(todayWeight >= this.attributes["startWeight"]) {
                 weightChange = Math.round((todayWeight - this.attributes['startWeight']) * 10) / 10;
@@ -135,6 +135,13 @@ var handlers = {
         VoiceLabs.track(this.event.session, 'CorrectWeight', 'Correct Weight', speechText, (error, response) => {
             this.emit(':ask', speechText);
         }); 
+    },
+
+    'WeightTip': function(){
+        var speechText = tip[Math.floor(Math.random() * 25)];
+        VoiceLabs.track(this.event.session, 'WeightTip', 'Weight Tip', speechText, (error, response) => {
+            this.emit(':tell', speechText);
+        });
     },
 
     'RepeatWeight': function(){
@@ -180,7 +187,7 @@ var handlers = {
     },
 
     'AMAZON.HelpIntent': function(){
-        var speechText = 'Need help? To record your weight, you can say the number of pounds you currently weigh, such as, one hundred and ninety-five point 5 pounds. To correct an incorrectly recorded weight, say. correct weight. To find out your starting weight, and your last recorded weight, you can say. What is my weight? To reset your weight data, you can say. Reset weight resolution. Please say the phrase associated with the action you would like to take.';
+        var speechText = 'Need help? To record your weight, you can say the number of pounds you currently weigh, such as, one hundred and ninety-five point 5 pounds. To correct an incorrectly recorded weight, say. correct weight. To find out your starting weight, and your last recorded weight, you can say. What is my weight? To reset your weight data, you can say. Reset weight resolution. To get a weight loss tip, you can say. Give me a tip. Please say the phrase associated with the action you would like to take.';
         VoiceLabs.track(this.event.session, 'AMAZON.HelpIntent', 'Help', speechText, (error, response) => {
             this.emit(':ask', speechText);
         }); 

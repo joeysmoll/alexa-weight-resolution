@@ -62,3 +62,35 @@ ConfirmReset confirm reset
 CorrectWeight correct weight
 CorrectWeight correct my weight
 CorrectWeight correct todays weight
+
+WeightTip give tip
+WeightTip tell tip
+WeightTip say a tip
+WeightTip provide tip
+
+WeightTip give weight loss tip
+WeightTip tell weight loss tip
+WeightTip say a weight loss tip
+WeightTip provide weight loss tip
+
+WeightTip give me a tip
+WeightTip tell me a tip
+WeightTip say a tip
+WeightTip tip
+WeightTip can I get a tip
+WeightTip I want a tip
+WeightTip how about a tip
+WeightTip provide a tip
+WeightTip provide me with a tip
+WeightTip tip please
+
+WeightTip give me a weight loss tip
+WeightTip tell me a weight loss tip
+WeightTip say a weigh loss tip
+WeightTip weight loss tip
+WeightTip can i get a weight loss tip
+WeightTip I want a weight loss tip
+WeightTip how about a weight loss tip
+WeightTip provide a weight loss tip
+WeightTip provide me with a weight loss tip
+WeightTip weight loss tip please
